@@ -280,8 +280,8 @@ p { text-wrap: pretty; }
 .trust__label { font-size: var(--fs-small); color: var(--is-ink-500); font-weight: 500; }
 .trust__note { color: var(--is-ink-300); }
 .trust__logos { display: flex; flex-wrap: wrap; gap: var(--space-lg); align-items: center; justify-content: center; }
-.trust__logo { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--is-ink-300); letter-spacing: -0.01em; transition: color var(--dur-base) var(--ease-standard); }
-.trust__logo:hover { color: var(--is-gold-600); }
+.trust__logo { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--is-ink-500); letter-spacing: -0.01em; transition: color var(--dur-base) var(--ease-standard); }
+.trust__logo:hover { color: var(--is-gold-700); }
 
 /* --------------------------- Journey ------------------------------- */
 .journey__steps { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-lg); margin-top: var(--space-xl); }
@@ -390,7 +390,8 @@ p { text-wrap: pretty; }
 .accordion__trigger[aria-expanded="true"] .accordion__chev { transform: rotate(180deg); }
 .accordion__panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--dur-base) var(--ease-standard); }
 .accordion__panel.is-open { grid-template-rows: 1fr; }
-.accordion__panel-inner { overflow: hidden; }
+.accordion__panel-inner { overflow: hidden; visibility: hidden; transition: visibility var(--dur-base) var(--ease-standard); }
+.accordion__panel.is-open .accordion__panel-inner { visibility: visible; }
 .accordion__panel-inner p { padding: 0 var(--space-lg) var(--space-md); color: var(--is-ink-500); }
 
 /* --------------------------- Booking ------------------------------- */
@@ -410,7 +411,7 @@ p { text-wrap: pretty; }
 .field label { font-size: var(--fs-body-sm); font-weight: 600; color: var(--is-ink-900); margin-bottom: var(--space-3xs); }
 .field input, .field select { font: inherit; font-size: var(--fs-body); padding: 0.7rem 0.85rem; border: 1.5px solid var(--is-border-strong); border-radius: var(--radius-sm); background: var(--is-white); color: var(--is-ink-900); transition: border-color var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard); }
 .field input:focus, .field select:focus { outline: none; border-color: var(--is-gold-500); box-shadow: 0 0 0 3px var(--is-gold-100); }
-.field input::placeholder { color: var(--is-ink-300); }
+.field input::placeholder { color: var(--is-ink-500); }
 .field.has-error input, .field.has-error select { border-color: var(--is-error); }
 .field__error { color: var(--is-error); font-size: var(--fs-small); margin-top: 4px; min-height: 0; }
 .book-form__fineprint { font-size: var(--fs-small); color: var(--is-ink-500); text-align: center; margin-top: var(--space-sm); }
