@@ -1,0 +1,15 @@
+# Local Claude / editor tooling
+.claude/
+.vscode/
+*.code-workspace
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch / preview artifacts (verification screenshots etc.)
+.preview*.png
+.diag*
+.v2-*
+.v3-*
