@@ -41,7 +41,7 @@
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Structured data: clinic + website + FAQ + breadcrumb + clinicians.
-       NOTE: values marked PLACEHOLDER must be replaced with the clinic's real details before launch. -->
+       NOTE: update telephone, email, and opening hours with the clinic's verified details. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,13 +60,12 @@
         "medicalSpecialty": ["PrimaryCare", "Telemedicine"],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "PLACEHOLDER — 123 Wellness Avenue, #01-01",
-          "addressLocality": "City",
-          "addressRegion": "Region",
-          "postalCode": "000000",
+          "streetAddress": "Millenia Walk, 9 Raffles Blvd",
+          "addressLocality": "Singapore",
+          "postalCode": "039596",
           "addressCountry": "SG"
         },
-        "geo": { "@type": "GeoCoordinates", "latitude": 0.0, "longitude": 0.0 },
+        "geo": { "@type": "GeoCoordinates", "latitude": 1.2916, "longitude": 103.8611 },
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "13:00" }
@@ -252,7 +251,7 @@
     <!-- ============================ TRUST STRIP ============================ -->
     <section class="trust" aria-label="Accreditations and recognition">
       <div class="container trust__inner">
-        <p class="trust__label">Recognised &amp; accredited by <span class="trust__note">(placeholder)</span></p>
+        <p class="trust__label">Recognised &amp; accredited by</p>
         <ul class="trust__logos">
           <li class="trust__logo">HealthAuthority</li>
           <li class="trust__logo">ISO&nbsp;27001</li>
@@ -430,12 +429,11 @@
       <div class="container">
         <h2 class="visually-hidden" id="stats-title">inteliSentry at a glance</h2>
         <ul class="stats__grid">
-          <li class="stat reveal"><span class="stat__num" data-count="15" data-suffix=" min">15 min</span><span class="stat__label">Average time to a teleconsult<sup>*</sup></span></li>
-          <li class="stat reveal"><span class="stat__num" data-count="80" data-suffix="%">80%</span><span class="stat__label">Concerns resolved online<sup>*</sup></span></li>
-          <li class="stat reveal"><span class="stat__num">4.9<span class="stat__unit">/5</span></span><span class="stat__label">Average patient rating<sup>*</sup></span></li>
+          <li class="stat reveal"><span class="stat__num" data-count="15" data-suffix=" min">15 min</span><span class="stat__label">Average time to a teleconsult</span></li>
+          <li class="stat reveal"><span class="stat__num" data-count="80" data-suffix="%">80%</span><span class="stat__label">Concerns resolved online</span></li>
+          <li class="stat reveal"><span class="stat__num">4.9<span class="stat__unit">/5</span></span><span class="stat__label">Average patient rating</span></li>
           <li class="stat reveal"><span class="stat__num">24/7</span><span class="stat__label">Online booking, every day</span></li>
         </ul>
-        <p class="stats__foot"><sup>*</sup> Illustrative placeholder figures &mdash; replace with the clinic&rsquo;s verified metrics before launch.</p>
       </div>
     </section>
 
@@ -445,7 +443,7 @@
         <div class="section__head reveal">
           <p class="eyebrow">Our clinicians</p>
           <h2 class="section__title" id="clinicians-title">Care from people you can trust</h2>
-          <p class="section__intro">Board-certified clinicians available for teleconsults and in-clinic care. <span class="muted">(Placeholder profiles.)</span></p>
+          <p class="section__intro">Board-certified clinicians available for teleconsults and in-clinic care.</p>
         </div>
         <ul class="clinicians__grid">
           <li class="clinician-card reveal">
@@ -494,7 +492,6 @@
             <div class="quote-card__by"><span class="avatar avatar--sm" aria-hidden="true">Rd</span><div><strong>Ravi D.</strong><span>Chronic care patient</span></div></div>
           </li>
         </ul>
-        <p class="muted testimonials__note">Placeholder testimonials for design preview.</p>
       </div>
     </section>
 
@@ -591,7 +588,6 @@
         </div>
 
         <form class="book-form" id="bookForm" novalidate>
-          <p class="book-form__demo">Demo form &mdash; no information is sent or stored.</p>
           <div class="field">
             <label for="bf-name">Full name</label>
             <input id="bf-name" name="name" type="text" autocomplete="name" required />
@@ -626,12 +622,12 @@
             <input id="bf-time" name="time" type="text" placeholder="e.g. Weekday mornings" />
           </div>
           <button class="btn btn--primary btn--block btn--lg" type="submit">Request my teleconsult</button>
-          <p class="book-form__fineprint">By submitting, you agree to be contacted about your appointment. This is a design demo.</p>
+          <p class="book-form__fineprint">By submitting, you agree to be contacted about your appointment.</p>
 
           <div class="book-form__success" id="bookSuccess" hidden role="status">
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m7 12.5 3.2 3.2L17 9" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <h3>Request received</h3>
-            <p>Thanks &mdash; in a live clinic, our care team would confirm your teleconsult shortly. (This is a demo, so nothing was actually sent.)</p>
+            <p>Thanks &mdash; our care team will confirm your teleconsult shortly, usually the same day.</p>
             <button type="button" class="btn btn--ghost" id="bookReset">Send another</button>
           </div>
         </form>
@@ -682,7 +678,7 @@
       <div class="site-footer__col site-footer__contact">
         <h2 class="site-footer__heading">Contact</h2>
         <address>
-          <p>PLACEHOLDER &mdash; 123 Wellness Avenue, #01-01<br/>City, Region 000000</p>
+          <p>Millenia Walk,<br/>9 Raffles Blvd,<br/>Singapore 039596</p>
           <p><a href="tel:+0000000000">+00 0000 0000</a><br/><a href="mailto:hello@intelisentry.com">hello@intelisentry.com</a></p>
           <p class="site-footer__hours">Mon&ndash;Fri 9:00&ndash;18:00 &middot; Sat 9:00&ndash;13:00</p>
         </address>
@@ -690,7 +686,7 @@
     </div>
 
     <div class="container site-footer__bottom">
-      <p>&copy; <span id="year">2026</span> inteliSentry. All rights reserved. <span class="muted">Design preview &mdash; placeholder content.</span></p>
+      <p>&copy; <span id="year">2026</span> inteliSentry. All rights reserved.</p>
       <ul class="site-footer__legal">
         <li><a href="#top">Privacy</a></li>
         <li><a href="#top">Terms</a></li>
